@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game đơn giản</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<section class="nguoiMay">
+			<div id="nguoiChoi" class="NV">
+				<h3>Bạn</h3>
+				<img src="https://i.imgur.com/BiomRbf.png" />
+				<div class="OHP">
+					<div class="IHP" :style="{width: HP1 + '%'}"></div>
+				</div>
+			</div>
+			<div id="mayChoi" class="NV">
+				<h3>Máy</h3>
+				<img src="https://i.imgur.com/RHIowa4.png" />
+				<div class="OHP">
+					<div class="IHP" :style="{width: HP2 + '%'}"></div>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+		</section>
+		<div class="control">
+			<template v-if="!isStart">
+				<button @click="start()" class="btn startBtn">Bắt đầu</button>
+				<br>
+			</template>
+			<template v-else>
+				<button @click="kill()" class="btn killBtn">Đánh</button>
+				<button @click="sKill()" class="btn sKillBtn">Tuyệt chiêu</button>
+				<button @click="heal()" class="btn healBtn">Hồi máu</button>
+				<button @click="stop()" class="btn giveUpBtn">Đầu hàng</button>
+			</template>
+		</div>
+		<div class="log">
+			<h3 v-for="log in logs" :class="{xanh: log.isNguoi, do: !isNguoi}"> {{ log.satThuong }}</h3>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js">
+	</script>
+</body>
+</html>

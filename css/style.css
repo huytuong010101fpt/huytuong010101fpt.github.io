@@ -1,0 +1,87 @@
+#app{
+  width: 100%;
+  text-align: center;
+  
+}
+.nguoiMay{
+
+  width: 700px;
+  margin:10px auto;
+  border: 2px solid ;
+}
+.NV{
+  float:left;
+  margin: 10px 20px;
+  
+}
+img{
+  width: 300px;
+}
+.OHP{
+  width: 95%;
+  height: 30px;
+  background-color: gray;
+  margin: 10px auto;
+}
+.IHP{
+  width: 90%;
+  height: 30px;
+  background-color: red;
+  transition: width 1s;
+  -moz-transition: width 1s;
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
+}
+.control{
+  width:700px;
+  margin:30px auto;
+  border:2px solid black;
+  padding:10px;
+  box-shadow:0 3px 2px #000;
+  background-color:#F2F2F2;
+
+}
+.btn{
+  font-size:25px;
+  padding:10px 30px;
+  
+}
+.startBtn{
+  background-color:#2EFE2E;
+  color: red;
+}
+.killBtn{
+  background-color:#F2F5A9;
+  color: red;
+}
+.sKillBtn{
+  background-color:#FFFF00;
+  color: red;
+}
+.healBtn{
+  background-color:#58ACFA;
+  color: red;
+}
+.giveUpBtn{
+  background-color:#FF0000;
+  color: #F2F2F2;
+}
+.log{
+  border:2px solid black;
+  width:700px;
+  max-height: 300px;
+  overflow: scroll;
+  margin: 20px auto;
+  box-shadow:0 3px 2px #000;
+  -webkit-box-shadow:0 3px 2px #000;
+  -moz-box-shadow:0 3px 2px #000;
+}
+.do{
+  background-color: red;
+}
+.xanh{
+  background-color: green;
+}
+h3{
+  margin: 0px 0px;
+}
