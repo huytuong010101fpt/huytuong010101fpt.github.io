@@ -1,0 +1,132 @@
+.header{
+	width:100%;
+	height: 500px;
+	background-color:#000326;
+
+}
+#lmenu li{
+	display: inline;
+	margin: 10px 10px;
+}
+#lmenu li:hover{
+	color: #0E90FF;
+}
+#lmenu{
+	margin-top: 30px;
+	margin-right: 200px;
+	float: right;
+	color: #E8E8E8;
+}
+#liSearch{
+	border-right: 2px solid blue;
+	padding-right: 20px;
+
+}
+.fa-search{
+	color: #0E90FF;
+}
+.icon{
+	height: 100px;
+	margin-left: 200px;
+}
+h1{
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 100px;
+	color: white;
+}
+h6{
+	text-align: center;
+	color: #AEAEAE;
+	margin: 10px auto;
+}
+.btn1{
+	width: fit-content;
+	background-color: #FF0042;
+	padding: 10px 40px;
+	border-radius: 30px;
+	margin:40px auto;
+	color:yellow;
+}
+.btn1:hover{
+	color:white;
+	background-color: #FF6C92;
+}
+
+.intro{
+	text-align: center;
+}
+h6{
+	color:#B6B6B6;
+	
+}
+.hrr{
+	margin: 0px auto;
+}
+
+.threeRow{
+	width: 70%;
+	margin:20px auto;
+	text-align: center;
+}
+h5{
+	color: yellow;
+	text-align: center;
+}
+.paraItr{
+	color:#989898;
+}
+.iconRow{
+	font-size: 500%;
+	color: #3FEFFF;
+	margin: 10px auto;
+}
+.listLinkImg{
+	text-align: center;
+	margin-top: 40px;
+}
+.listLinkImg a{
+	color: #878787;
+	margin: 20px 10px;
+	padding:10px 15px;
+}
+.listLinkImg a:hover{
+	color: #FFF000;
+	background-color: #FF3153;
+	border-radius: 10px;
+	text-decoration: none;
+	
+}
+.imgs{
+	background-color: #D8FDFA;
+	padding-bottom: 40px;
+}
+.col-sm-3{
+	margin-top: 20px;
+}
+.paraInfo{
+	margin: auto;
+	width: 40%;
+	color:#A5A5A5;
+}
+.benTrai{
+	text-align: left;
+}
+.btnTrai{
+	margin-left:0px;
+}
+.benTrai p{
+	color:#A5A5A5;
+}
+.laptop{
+	width: 100%;
+}
+.theEnd{
+	text-align: center;
+	background-color: #000326;
+	padding: 40px 40px;
+	padding-top:60px;
+}
+.SYON{
+	color:white;
+}
