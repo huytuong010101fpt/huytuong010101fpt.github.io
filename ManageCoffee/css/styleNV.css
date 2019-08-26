@@ -1,3 +1,4 @@
+
 .tableCF{
   display: inline-block;
   text-decoration: none;
@@ -49,20 +50,23 @@ h1{
   border-bottom: groove;
   color: #FF9000;
   margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 300%;
 }
 .giaiKhat{
   text-align: left;
   border-bottom: groove;
   color: #00FF18;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 300%;
 }
 .khac{
   text-align: left;
   border-bottom: groove;
   color: #FF0000;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 300%;
 }
 .menu{
@@ -76,4 +80,22 @@ h1{
   transform: translateX(-50%);
   background-color: rgba(143,255,139,0.5);
   display: none;
+}
+.TBNum{
+  font-size: 300%;
+  text-align: center;
+  color: red;
+  margin: 5px;
+}
+table{
+  font-size: 300%;
+  width: 100%;
+
+}
+input{
+  font-size: 100%;
+  width: 40%;
+}
+td{
+  width: 50%;
 }

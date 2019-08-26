@@ -4,20 +4,21 @@
 	<title>Nhân viên 001</title>
 	<link rel="stylesheet" type="text/css" href="css/styleNV.css">
 
-<body>
-	<h1>Nhân viên Nguyễn Huy Tưởng</h1>
-	<div class="table">
-	<script type="text/javascript">
-		for (i = 1;i <= 80;i++){
-			document.write('<a href="#" class="tableCF">Bàn ' + i + '</a>');
-			if (i % 5 == 0){
-				document.write('<br>');
-			}
-		}
+	<body>
+		<h1>Nhân viên Nguyễn Huy Tưởng</h1>
+		<div class="table">
+			<script type="text/javascript">
+				for (i = 1;i <= 80;i++){
+					document.write('<a href="#" id="' + i + '" class="tableCF">Bàn ' + i + '</a>');
+					if (i % 5 == 0){
+						document.write('<br>');
+					}
+				}
 
-	</script>
-	</div>
-	<div class="menu">
+			</script>
+		</div>
+		<div class="menu">
+			<h3 class="TBNum">Bàn số #:</h3>
 			<h4 class="cafe"> Cafe</h4>
 			<a href="#" class="btnThucUong thucUong">Cafe Đen</a>
 			<a href="#" class="btnThucUong thucUong">Cafe Sữa</a>
@@ -35,8 +36,16 @@
 			<h4 class="khac"> Thức uống khác</h4>
 			<a href="#" class="btnThucUong thucUong">Sửa chua</a>
 			<a href="#" class="btnThucUong thucUong">Cam vắt</a>
-	</div>
-	<script type="text/javascript" src="js/jsNV.js"></script>
-</head>
+			<hr>
+			<br>
+			<table class="order">
+				<tr>
+					<td>CocaCola</td>
+					<td><input type="number" value="1" step="1"></td>
+				</tr>
+			</table>
+		</div>
+		<script type="text/javascript" src="js/jsNV.js"></script>
+	</head>
 </body>
 </html>
