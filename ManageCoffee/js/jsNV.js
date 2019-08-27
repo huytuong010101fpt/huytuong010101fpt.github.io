@@ -16,7 +16,7 @@ function checkRows(){
 
 	}
 }
-checkRows();
+
 function DelRow(btn){
 	var row = btn.parentNode.parentNode;
 	row.parentNode.removeChild(row);
@@ -26,8 +26,8 @@ var Menu = document.getElementsByClassName('thucUong');
 for (i = 0;i < Menu.length;i++){
 	Menu[i].onclick = function(event){
 		var Name = event.target.innerText;
-		a = document.getElementsByTagName("TD");
-		b = document.getElementsByTagName("input");
+		var a = document.getElementsByTagName("TD");
+		var b = document.getElementsByTagName("input");
 		for (j = 0;j < a.length;j+=3){
 			if (a[j].innerText == Name){
 				b[j/3].value = Number(b[j/3].value) + 1;
@@ -62,5 +62,6 @@ for (i = 0;i < Menu.length;i++){
     	Table[i].onclick = function(event){
     		document.getElementsByClassName('TBNum')[0].innerText = "Bàn số " + event.target.id + ":";
     		document.getElementsByClassName('menu')[0].style.display = "block";
+    		checkRows();
     	}
     }
