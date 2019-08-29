@@ -30,7 +30,6 @@ for (i = 0;i < Menu.length;i++){
 			var b = document.getElementsByTagName("input");
 			alert(1)
 			for (var j = 0;j < a.length;j+=3){
-				alert(1)
 				if (a[j].innerText == Name){
 					b[j/3].value = Number(b[j/3].value) + 1;
 					return 0; 
