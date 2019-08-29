@@ -27,6 +27,7 @@ for (i = 0;i < Menu.length;i++){
 	Menu[i].onclick = function(event){
 			
 			var Name = event.target.innerText;
+
 			
 			var a = document.getElementsByTagName("TD");
 			var b = document.getElementsByTagName("input");
@@ -34,6 +35,7 @@ for (i = 0;i < Menu.length;i++){
 			for (var j = 0;j < a.length;j+=3){
 				
 				if (a[j].innerHTML == Name){
+					alert("ok");
 					b[j/3].value = Number(b[j/3].value) + 1;
 					return 0; 
 				}
