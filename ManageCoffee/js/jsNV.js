@@ -25,7 +25,7 @@ function DelRow(btn){
 var Menu = document.getElementsByClassName('thucUong');
 for (i = 0;i < Menu.length;i++){
 	Menu[i].onclick = function(event){
-			alert("okkkkkkkk");
+			alert("ahjhj");
 			var Name = event.target.innerText;
 
 			
@@ -34,7 +34,8 @@ for (i = 0;i < Menu.length;i++){
 			
 			for (var j = 0;j < a.length;j+=3){
 				alert(a[j].innerText);
-				if (a[j].innerHTML == Name){
+				alert(Name);
+				if (a[j].innerText == Name){
 					alert("ok");
 					b[j/3].value = Number(b[j/3].value) + 1;
 					return 0; 
