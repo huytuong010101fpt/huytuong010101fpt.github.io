@@ -25,13 +25,14 @@ function DelRow(btn){
 var Menu = document.getElementsByClassName('thucUong');
 for (i = 0;i < Menu.length;i++){
 	Menu[i].onclick = function(event){
-			alert("tren");
+			
 			var Name = event.target.innerText;
-			alert("giua");
+			
 			var a = document.getElementsByTagName("TD");
 			var b = document.getElementsByTagName("input");
-			alert("duoi");
+			
 			for (var j = 0;j < a.length;j+=3){
+				alert("for");
 				if (a[j].innerText == Name){
 					b[j/3].value = Number(b[j/3].value) + 1;
 					return 0; 
