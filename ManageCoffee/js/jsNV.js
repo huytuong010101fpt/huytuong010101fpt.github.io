@@ -25,7 +25,7 @@ function DelRow(btn){
 var Menu = document.getElementsByClassName('thucUong');
 for (i = 0;i < Menu.length;i++){
 	Menu[i].onclick = function(event){
-			
+			alert("ok1");
 			var Name = event.target.innerText;
 
 			
