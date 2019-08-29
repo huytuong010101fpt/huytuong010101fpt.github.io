@@ -35,7 +35,7 @@ for (i = 0;i < Menu.length;i++){
 			for (var j = 0;j < a.length;j+=3){
 
 				if (a[j].innerText.localeCompare(Name) == 0){
-					alert("ok");
+					
 					b[j/3].value = Number(b[j/3].value) + 1;
 					return 0; 
 				}
