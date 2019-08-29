@@ -28,14 +28,14 @@ for (i = 0;i < Menu.length;i++){
 			var Name = event.target.innerText;
 			var a = document.getElementsByTagName("TD");
 			var b = document.getElementsByTagName("input");
-			alert(1)
+			
 			for (var j = 0;j < a.length;j+=3){
 				if (a[j].innerText == Name){
 					b[j/3].value = Number(b[j/3].value) + 1;
 					return 0; 
 				}
 			}
-
+			alert(1)
 			var MyTable = document.getElementById("order"); 
 
 	            // insert new row. 
