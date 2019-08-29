@@ -25,10 +25,11 @@ function DelRow(btn){
 var Menu = document.getElementsByClassName('thucUong');
 for (i = 0;i < Menu.length;i++){
 	Menu[i].onclick = function(event){
+			alert(1);
 			var Name = event.target.innerText;
 			var a = document.getElementsByTagName("TD");
 			var b = document.getElementsByTagName("input");
-			
+			alert(2);
 			for (var j = 0;j < a.length;j+=3){
 				if (a[j].innerText == Name){
 					b[j/3].value = Number(b[j/3].value) + 1;
@@ -38,8 +39,7 @@ for (i = 0;i < Menu.length;i++){
 
 			var MyTable = document.getElementById("order"); 
 
-	            // insert new row. 
-	            alert(1);
+	            // insert new row.
 	            var NewRow = MyTable.insertRow(0); 
 	            NewRow.insertCell(0).innerHTML = '<h3 onclick="Down(this)">' + Name + '</h3>'; 
 	            NewRow.insertCell(1).innerHTML = '<input type="number" value="1" step="1" min="1">'; 
