@@ -35,10 +35,11 @@ for (i = 0;i < Menu.length;i++){
 					return 0; 
 				}
 			}
-			alert(1)
+
 			var MyTable = document.getElementById("order"); 
 
 	            // insert new row. 
+	            alert(1);
 	            var NewRow = MyTable.insertRow(0); 
 	            NewRow.insertCell(0).innerHTML = '<h3 onclick="Down(this)">' + Name + '</h3>'; 
 	            NewRow.insertCell(1).innerHTML = '<input type="number" value="1" step="1" min="1">'; 
