@@ -32,8 +32,8 @@ for (i = 0;i < Menu.length;i++){
 			var b = document.getElementsByTagName("input");
 			
 			for (var j = 0;j < a.length;j+=3){
-				alert("for");
-				if (a[j].innerText == Name){
+				
+				if (a[j].innerHTML == Name){
 					b[j/3].value = Number(b[j/3].value) + 1;
 					return 0; 
 				}
