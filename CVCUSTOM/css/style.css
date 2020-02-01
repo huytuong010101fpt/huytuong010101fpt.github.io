@@ -725,6 +725,9 @@ a {
 
   background: transparent;
 }
+.right-15{
+  right: 15px;
+}
 .grid-item {
   width: 25%;
 }
@@ -796,6 +799,9 @@ a {
   }
   .contact {
     height: auto;
+  }
+  .listMenu{
+    padding: 0px !important;
   }
 }
 @media only screen and (max-width: 767px) {
