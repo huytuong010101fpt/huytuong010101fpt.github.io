@@ -151,6 +151,20 @@ $(".btnHome2").mouseleave(() => {
     $(".btnHome2 .fillBtn2").addClass("emptyBtnAnime")
     $(".btnHome2 .fillBtn").addClass("emptyBtnAnime")
 })
+
+$(".btnSubmitWrap").mouseover(() => {
+    $(".btnSubmitWrap .fillSubmit2").addClass("fillBtnAnime")
+    $(".btnSubmitWrap .fillSubmit").addClass("fillBtnAnime2")
+    $(".btnSubmitWrap .fillSubmit2").removeClass("emptyBtnAnime")
+    $(".btnSubmitWrap .fillSubmit").removeClass("emptyBtnAnime")
+})
+$(".btnSubmitWrap").mouseleave(() => {
+    $(".btnSubmitWrap .fillSubmit2").removeClass("fillBtnAnime")
+    $(".btnSubmitWrap .fillSubmit").removeClass("fillBtnAnime2")
+    $(".btnSubmitWrap .fillSubmit2").addClass("emptyBtnAnime")
+    $(".btnSubmitWrap .fillSubmit").addClass("emptyBtnAnime")
+})
+
 $(".webDesin").mouseover(() => {
     $(".webDesin .iconService").addClass("outsideIcon")
     $(".webDesin .iconService i").addClass("insideIcon")

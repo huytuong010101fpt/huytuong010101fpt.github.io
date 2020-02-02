@@ -95,6 +95,26 @@ section:hover div h2 {
   position: absolute;
   right: 0px;
 }
+.btnSubmitWrap{
+  float: right;
+  display: inline-block;
+  border-radius: 99px;
+  overflow: hidden;
+  background-color:  #c49b66;
+}
+.fillSubmit, .fillSubmit2{
+  height: 100%;
+  width: 0%;
+  left: 0px;
+  top: 0px;
+  z-index: 5;
+}
+.fillSubmit{
+  background-color: rgba(255, 255, 255, 0.753);
+}
+.fillSubmit2{
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .fillBtn {
   height: 100%;
   width: 0%;
@@ -376,11 +396,13 @@ textarea {
   float: right;
   border-radius: 99px;
   padding: 10px 30px;
-  background-color: #c49b66;
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   font-size: 14px;
   height: 44px;
   transition: all 0.3s;
+  z-index: 10;
+  position: relative;
 }
 .ipName,
 .ipEmail {
@@ -432,6 +454,7 @@ form {
 footer > div > p {
   color: #999;
   letter-spacing: 2px;
+  font-size: 12px !important;
 }
 footer {
   padding: 80px 0px;
@@ -473,7 +496,6 @@ footer > div > div > a > i {
 }
 .btnSubmit:hover {
   color: #c49b66;
-  background-color: #fff;
 }
 .btnHome > a {
   z-index: 10;
