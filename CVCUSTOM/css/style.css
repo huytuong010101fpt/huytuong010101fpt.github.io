@@ -800,6 +800,10 @@ a {
   .listMenu{
     padding: 0px !important;
   }
+  #Home{
+    background-attachment: scroll !important;
+    background-position: 50% 0% !important;
+  }
 }
 @media only screen and (max-width: 767px) {
   .selectPortfolio > span {
