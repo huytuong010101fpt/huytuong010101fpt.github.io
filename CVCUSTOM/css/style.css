@@ -952,12 +952,12 @@ a {
     height: 0px;
   }
   to {
-    height: 332px;
+    height: 312px;
   }
 }
 @keyframes hideMenu {
   from {
-    height: 332px;
+    height: 312px;
   }
   to {
     height: 0px;
