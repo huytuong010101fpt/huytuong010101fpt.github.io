@@ -62,7 +62,7 @@ input{
 }
 .paraSkill{
 	transition: all 0.4s;
-	width: 460px;
+	width: 62%;
 	float: right;
 	margin-right: 30px;
 	display: none;
