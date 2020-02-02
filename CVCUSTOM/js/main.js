@@ -109,10 +109,11 @@ $(".listMenu").click(() => {
 //code for nav
 document.getElementsByTagName("body")[0].onscroll = function () { EBodyScroll() }
 document.getElementsByTagName("body")[0].ontouchmove = function () { EBodyScroll() }
+$( document ).ready(function() {
+    EBodyScroll();
+});
 function EBodyScroll() {
-    //var heightScroll = document.getElementsByTagName("html")[0].scrollTop;
     const heightScroll = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
-    
     if (heightScroll > 90) {
         $(".fixedMenu").css("background-color", "#222");
         $(".fixedMenu").css("transform", "translateY(0px)");
