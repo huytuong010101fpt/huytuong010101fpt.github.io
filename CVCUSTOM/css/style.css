@@ -602,7 +602,6 @@ footer > div > div > a > i {
   text-align: center;
   position: relative;
   background-attachment: fixed;
-  background-position-y: inherit;
 }
 .contentHome {
   transform: translateY(-26%);
