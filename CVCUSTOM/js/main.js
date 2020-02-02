@@ -108,6 +108,7 @@ $(".listMenu").click(() => {
 })
 //code for nav
 document.getElementsByTagName("body")[0].onscroll = function () { EBodyScroll() }
+document.getElementsByTagName("body")[0].ontouchmove = function () { EBodyScroll() }
 function EBodyScroll() {
     var heightScroll = document.getElementsByTagName("html")[0].scrollTop;
     if (heightScroll > 90) {
