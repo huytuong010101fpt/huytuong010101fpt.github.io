@@ -597,7 +597,7 @@ footer > div > div > a > i {
 #Home {
   background-size: cover;
   height: 100vh;
-  background-image: url("/img/bg.jpg");
+  background-image: url("https://zainx.netlify.com/img/bg.jpg");
   background-position: center;
   text-align: center;
   position: relative;
