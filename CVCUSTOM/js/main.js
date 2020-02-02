@@ -110,7 +110,6 @@ $(".listMenu").click(() => {
 document.getElementsByTagName("body")[0].onscroll = function () { EBodyScroll() }
 document.getElementsByTagName("body")[0].ontouchmove = function () { EBodyScroll() }
 function EBodyScroll() {
-    alert(1)
     var heightScroll = document.getElementsByTagName("html")[0].scrollTop;
     if (heightScroll > 90) {
         $(".fixedMenu").css("background-color", "#222");
