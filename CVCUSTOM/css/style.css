@@ -597,7 +597,6 @@ footer > div > div > a > i {
 #Home {
   background-size: cover;
   height: 100vh;
-  background-color: black;
   background-image: url("/img/bg.jpg");
   background-position: center;
   text-align: center;
