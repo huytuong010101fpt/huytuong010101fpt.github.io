@@ -19,61 +19,26 @@ setInterval(function () {
     }
 
 }, 2000);
-//code to active when slide to id
-$('#Home').waypoint(function () {
-    $("#labelHome").addClass("activeMenu")
-    $("#labelAbout").removeClass("activeMenu")
-    $("#labelServices").removeClass("activeMenu")
-    $("#labelPortfolio").removeClass("activeMenu")
-    $("#labelBlog").removeClass("activeMenu")
-    $("#labelContact").removeClass("activeMenu")
-}, { offset: -10 });
-$('#Home').waypoint(function () {
-    $("#labelHome").addClass("activeMenu")
-    $("#labelAbout").removeClass("activeMenu")
-    $("#labelServices").removeClass("activeMenu")
-    $("#labelPortfolio").removeClass("activeMenu")
-    $("#labelBlog").removeClass("activeMenu")
-    $("#labelContact").removeClass("activeMenu")
+//Code to auto scroll to section when coming
+$.scrollIt({
+    upKey: 38,             // key code to navigate to the next section
+    downKey: 40,           // key code to navigate to the previous section
+    easing: 'swing',      // the easing function for animation
+    scrollTime: 600,       // how long (in ms) the animation takes
+    activeClass: 'activeMenu', // class given to the active nav element
+    onPageChange: null,    // function(pageIndex) that is called when page is changed
+    topOffset: -80           // offste (in px) for fixed top navigation
 });
+$(function(){
+    $.scrollIt();
+});
+//code to init processing
 $('#level').waypoint(function () {
     $(".percent1").css("width", "80%");
     $(".percent2").css("width", "70%");
     $(".percent3").css("width", "90%");
 }, { offset: 700 });
-$('#Services').waypoint(function () {
-    $("#labelHome").removeClass("activeMenu")
-    $("#labelAbout").removeClass("activeMenu")
-    $("#labelServices").addClass("activeMenu")
-    $("#labelPortfolio").removeClass("activeMenu")
-    $("#labelBlog").removeClass("activeMenu")
-    $("#labelContact").removeClass("activeMenu")
-}, { offset: 200 });
-$('#About').waypoint(function () {
-    $("#labelHome").removeClass("activeMenu")
-    $("#labelAbout").addClass("activeMenu")
-    $("#labelServices").removeClass("activeMenu")
-    $("#labelPortfolio").removeClass("activeMenu")
-    $("#labelBlog").removeClass("activeMenu")
-    $("#labelContact").removeClass("activeMenu")
-}, { offset: 200 });
-$('#Portfolio').waypoint(function () {
-    $("#labelHome").removeClass("activeMenu")
-    $("#labelAbout").removeClass("activeMenu")
-    $("#labelServices").removeClass("activeMenu")
-    $("#labelPortfolio").addClass("activeMenu")
-    $("#labelBlog").removeClass("activeMenu")
-    $("#labelContact").removeClass("activeMenu")
-}, { offset: 200 });
-$('#Contact').waypoint(function () {
-    $("#labelHome").removeClass("activeMenu")
-    $("#labelAbout").removeClass("activeMenu")
-    $("#labelServices").removeClass("activeMenu")
-    $("#labelPortfolio").removeClass("activeMenu")
-    $("#labelBlog").removeClass("activeMenu")
-    $("#labelContact").addClass("activeMenu")
-}, { offset: 200 });
-var isNavDown = 0;
+
 //code for menu
 isClose = true;
 $(".iconMenu").click(() => {
@@ -232,14 +197,12 @@ $(".social-icon").mouseleave((e) => {
 // Code for layout picture
 var $grid = $('.grid').packery({
     itemSelector: '.grid-item',
+    initLayout: true,
+    percentPosition: true,
 });
 $grid.packery();
+filterAll();
 // code for filter picture
-$('.grid').isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    layoutMode: 'packery'
-});
 function filterAll() {
     toggleActive();
     $(".selectAll").addClass("active");
@@ -270,4 +233,3 @@ function toggleActive() {
     $(".selectDesign").removeClass("active");
     $(".selectGraphic").removeClass("active");
 }
-

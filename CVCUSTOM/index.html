@@ -24,18 +24,18 @@
 				<i class="iconMenu white-color fas fa-bars"></i>
 			</div>
 			<ul class="listMenu d-none d-lg-inline-block">
-				<li><a id="labelHome" href="#Home">Home</a></li>
-				<li><a id="labelAbout" href="#About">About</a></li>
-				<li><a id="labelServices" href="#Services">Services</a></li>
-				<li><a id="labelPortfolio" href="#Portfolio">Portfolio</a></li>
-				<li><a id="labelBlog" href="#Blog">Blog</a></li>
-				<li><a id="labelContact" href="#Contact">Contact</a></li>
+				<li><a data-scroll-nav="0" href="#">Home</a></li>
+				<li><a data-scroll-nav="1" href="#">About</a></li>
+				<li><a data-scroll-nav="2" href="#">Services</a></li>
+				<li><a data-scroll-nav="3" href="#">Portfolio</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a data-scroll-nav="4" href="#">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
 	<!--------End menu--------->
 	<main>
-		<section id="Home">
+		<section data-scroll-index="0" id="Home">
 			<div class="overlay"></div>
 			<div class="contentHome">
 				<h3>Welcome!</h3>
@@ -55,7 +55,7 @@
 				</span>
 			</div>
 		</section>
-		<section class="info" id="About">
+		<section data-scroll-index="1" class="info" id="About">
 			<div class="container h-100">
 				<div class="row mg80auto">
 					<div class="col-lg-4">
@@ -112,7 +112,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="service" id="Services">
+		<section data-scroll-index="2" class="service" id="Services">
 			<div class="container">
 				<h2 class="titleService">Services</h2>
 
@@ -152,7 +152,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="portfolio" id="Portfolio">
+		<section data-scroll-index="3" class="portfolio" id="Portfolio">
 			<div class="container">
 				<h2 class="titleService">Portfolio</h2>
 				<div class="selectPortfolio mt-0 mb-60">
@@ -249,7 +249,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact" id="Contact">
+		<section data-scroll-index="4" class="contact" id="Contact">
 			<div class="container">
 				<h2 class="titleService">Contact Us</h2>
 				<div class="infoContact row">
@@ -304,11 +304,14 @@
 			<p class="mt-15">© 2018 UI-THEMEZ. ALL RIGHTS RESERVED.</p>
 		</div>
 	</footer>
+	<!--Javasript library-->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="js/scrollIt.js"></script>
+	<!--Javasript main-->
 	<script src="js/main.js"></script>
 </body>
 
