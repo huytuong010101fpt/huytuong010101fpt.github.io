@@ -16,6 +16,45 @@
 .imgItem:hover .imgOverlay p{
   transform: translateY(0);
 }
+.loading{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 100;
+}
+.wrapDot{
+  height: 40px;
+  width: 107px;
+  position: absolute;
+  top: calc(100vh / 2 - 20px);;
+  left: calc(100vw / 2 - (107px /2));
+}
+.dot{
+  display: inline-block;
+  background-color: black;
+  border-radius: 8px;
+  height: 16px;
+  width: 16px;
+}
+.wrapDot > div > span{
+  margin: 0px 8px;
+}
+.wrapDot > div{
+  margin: auto;
+  height: 16px;
+  animation-name: dotsMove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.specalDot{
+  top: 0px;
+  right: 43px;
+  animation-name: dotMove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
 .overlayInfo{
   width: 100%;
 }
@@ -989,6 +1028,28 @@ a {
   }
   to {
     width: 0%;
+  }
+}
+@keyframes dotMove{
+  0%{
+    transform: translateX(-35px);
+  }
+  50%{
+    transform: translateX(35px);
+  }
+  100%{
+    transform: translateX(-35px);
+  }
+}
+@keyframes dotsMove{
+  0%{
+    transform: translateX(35px);
+  }
+  50%{
+    transform: translateX(-35px);
+  }
+  100%{
+    transform: translateX(35px);
   }
 }
 

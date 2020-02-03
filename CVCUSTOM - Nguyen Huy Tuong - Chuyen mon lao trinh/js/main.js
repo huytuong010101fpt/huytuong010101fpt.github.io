@@ -76,6 +76,10 @@ document.getElementsByTagName("body")[0].onscroll = function () { EBodyScroll() 
 document.getElementsByTagName("body")[0].ontouchmove = function () { EBodyScroll() }
 $( document ).ready(function() {
     EBodyScroll();
+    setTimeout(() => {
+        $(".loading").css("display","none");
+    },1000)
+    
 });
 function EBodyScroll() {
     const heightScroll = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
