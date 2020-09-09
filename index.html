@@ -31,6 +31,10 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="text-white">
+                        <span id="numOfViewer"></span>
+                        <i class="fas fa-eye"></i>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -287,5 +291,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="cv/js/scripts.js"></script>
+        <!-- Count view-->
+        <script>
+        function countView(res) {
+            $("#numOfViewer").text(res.value + " ")
+        }
+        </script>
+        <script async src="https://api.countapi.xyz/hit/huytuong010101-github-io/visits?callback=countView"></script>
     </body>
 </html>
