@@ -1,457 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Nguyen Huy Tuong</title>
-        <link rel="icon" type="image/x-icon" href="cv/assets/img/favicon.png" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="cv/css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Nguyen Huy Tuong</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="cv/assets/img/profile.jpg" alt="" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project">Project</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <li class="text-white">
-                        <span id="numOfViewer"></span>
-                        <i class="fas fa-eye"></i>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Nguyen Huy Tuong</title>
+    <link rel="icon" type="image/x-icon" href="cv/assets/img/favicon.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="cv/css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Nguyen Huy Tuong</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="cv/assets/img/profile.jpg" alt="" /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project">Project</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                <li class="text-white">
+                    <span id="numOfViewer"></span>
+                    <i class="fas fa-eye"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Nguyen Huy
+                    <span class="text-primary">Tuong</span>
+                </h1>
+                <div class="subheading mb-5">
+                    Da Nang, Viet Nam - 0965.223.769
+                    <a href="mailto:name@email.com">huytuong010101@gmail.com</a>
+                </div>
+                <p class="lead mb-5">
+                    Hello! I’m Nguyen Huy Tuong. Programming is my passion. I started learning programming when I was in
+                    high school. At that time, I studied algorithms to participate in some computer competitions. I have
+                    won a scholarship from the University of Greenwich(Viet Nam) worth 140,000,000 vnđ. But I chose to
+                    study at Da Nang University of Technology, where I was offered direct admission. I choose Python and
+                    Js as the programming language I will learn. I am studying AI at Sgroup and learning Django by
+                    myself.
+                </p>
+                <h3>Some information</h3>
+                <p>Date of birth: 01/01/2001</p>
+                <p>Hometown: Quang Nam
+                <p>
+                <p>Phone (Zalo): 0965223769
+                <p>
+                <p>Email: huytuong010101@gmail.com
+                <p>
+                <div class="social-icons">
+                    <a class="social-icon" target="_blank" href="https://github.com/huytuong010101"><i
+                            class="fab fa-github"></i></a>
+                    <a class="social-icon" target="_blank"
+                        href="https://www.youtube.com/channel/UCmrzRwST-ro3k3diyq6j2hA"><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="social-icon" target="_blank" href="https://www.facebook.com/huytuong010101"><i
+                            class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Phan Chau Trinh High School</h3>
+                        <div class="subheading mb-3">Student</div>
+                        <p>GPA: 8.9/10 - 8.8/10 - 8.9/10</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">September 2016 - June 2019</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Da Nang University of Technology</h3>
+                        <div class="subheading mb-3">IT Student</div>
+                        <p>GPA: 3.81/4</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">September 2019 - now</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">S-Group</h3>
+                        <div class="subheading mb-3">AI Team Lead</div>
+                        <p>Learning Front-end(HTML, CSS, JS, FW) + Back-end(NodeJs) + AI</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">November 2019 - now</span></div>
+                </div>
+            </div>
+        </section>
+        <!-- Project -->
+        <section class="resume-section" id="project">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Project</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Image Captioning</h3>
+                        <div class="subheading mb-3">Reseraching - Developer</div>
+                        <div>Team 4</div>
+                        <p>Project to participate in scientific research student conference<a target="_blank"
+                                href="/cv/assets/docs/SV_NCKH_IMAGE_CAPTIONING.pdf">See more</a></p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2021</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Clothes virtual Try on</h3>
+                        <div class="subheading mb-3">Reseraching - Developer</div>
+                        <div>Team 3</div>
+                        <p>Project to participate in scientific research student conference<a target="_blank"
+                                href="/cv/assets/docs/Bai bao nam hoc 2021-2022.pdf">See more</a></p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Da Nang plant identify</h3>
+                        <div class="subheading mb-3">AI Developer</div>
+                        <div>Team 1</div>
+                        <p>Building module to search plant spiecies by image<a target="_blank"
+                                href="http://danang.plantid.com.vn/">See more</a></p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Parking Findor System - PBL5 (AI - DS - IOT)</h3>
+                        <div class="subheading mb-3">AI - BackEnd Developer</div>
+                        <div>Team 4</div>
+                        <p>An website helps drivers to find best place to park their car<a target="_blank"
+                                href="https://youtu.be/aqc-QID5GfQ">See more</a></p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Loa Loa chatbot</h3>
+                        <div class="subheading mb-3">Python Back-end developer</div>
+                        <div>Team 4</div>
+                        <p>Update DUT notifications fastest via Messenger <a target="_blank"
+                                href="https://loaloa.cf/">See more</a></p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2020</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Game "Lắc liền tay - rinh quà khủng" for CityA Homes Company</h3>
+                        <div class="subheading mb-3">Nodejs Back-end developer</div>
+                        <div>Team 2 (Back-end)</div>
+                        <p>A game online: Login facebook - receive random gifts <a target="_blank"
+                                href="https://www.facebook.com/cityahomes.vn/posts/129847318654550">See more</a></p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2020</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">"Life in belgium" landing page for mobile app company</h3>
+                        <div class="subheading mb-3">Front-end developer</div>
+                        <div>Team 2</div>
+                        <p>A landing page use to advertise mobile app <a target="_blank"
+                                href="./cv/assets/img/landingPage.png">See more</a></p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2020</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Multiple choice test website</h3>
+                        <div class="subheading mb-3">Back-end + Front-end</div>
+                        <div>Myself</div>
+                        <p>You can do Multiple choice exercise via Website or Messenger. I developed this website to
+                            award to my high school <a target="_blank" href="http://botthithptqg.herokuapp.com/">See
+                                more</a></p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2018</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Some pet project</h3>
+                        <p>Manage Coffee via Smartphone (SocketIO - NodeJs)<a target="_blank"
+                                href="https://www.youtube.com/watch?v=L_qaIUrWqUs">See more</a></p>
+                        <p>Shopping Website (Django)<a target="_blank"
+                                href="https://www.youtube.com/watch?v=2qq1TM_ZNdk">See more</a></p>
+                        <p>Stampe pdf file (Python - PyQt5)<a target="_blank"
+                                href="https://www.youtube.com/watch?v=EB9mwYwxhjs">See more</a></p>
+                        <p>LookForBus (NodeJs - MySQL - Bootstrap - Jquery)<a target="_blank"
+                                href="https://www.youtube.com/watch?v=vdaUDLHfWnQ">See more</a></p>
+                        <p>Statistics Covid-19 Mobile App (Hybrid)<a target="_blank"
+                                href="./cv/assets/img/coronaApp.jpg">See more</a></p>
+                        <p>Face mask check Via Webcam (Python - Deeplearning)<a target="_blank"
+                                href="https://github.com/huytuong010101/CheckFaceMask-VGG-16-DeepLearning">See more</a>
+                        </p>
+                        <p>My blog on Codelean<a target="_blank"
+                                href="https://codelearn.io/sharing?str=huytuong010101&startdate=&enddate=">See more</a>
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                </div>
+
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience -->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Experience</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Intern AI - Computer Vision</h3>
+                        <div class="subheading mb-3">Ftech AI Company</div>
+                        <div>Research some projects related to Computer Vision</div>
+                        <p><a target="_blank" href="https://ftech.ai/">About company</a></p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">October 2020 to Now</span></div>
+                </div>
+
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Programming Languages & Tools</div>
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-cuttlefish"></i>++</li>
+                    <li class="list-inline-item"><i class="fab fa-github-square"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-aws"></i></li>
+                </ul>
+
+                <div class="subheading mb-3">Framework - Library</div>
+                <ul class="">
+                    <li>NodeJS</li>
+                    <li>Django</li>
+                    <li>FastAPI</li>
+                    <li>Bootstrap, Jquery</li>
+                    <li>Pytorch</li>
+                </ul>
+
+                <div class="subheading mb-3">Softskill</div>
+                <ul class="">
+                    <li>English</li>
+                    <li>Teamwork</li>
+                    <li>Code without eating</li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Interests</h2>
+                <p>I usually play Organ - practice Vovinam - listen to Music</p>
+                <p class="mb-0">And special is Coding</p>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards & Certifications</h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        1 <sup>st</sup> and 3 <sup>rd</sup>
+                        "Young Informatics" competition
+                        <a data-toggle="modal" data-target="#tinHocTre" class="text-primary"><i
+                                class="fas fa-image"></i></a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        1 <sup>st</sup> and 2 <sup>nd</sup> "Oympic tin hoc" competition
+                        <a data-toggle="modal" data-target="#olympicTinHoc" class="text-primary"><i
+                                class="fas fa-image"></i></a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        2 <sup>nd</sup> and 3 <sup>rd</sup> "Creative Science and Technology" competition
+                        <a data-toggle="modal" data-target="#KHKT" class="text-primary"><i class="fas fa-image"></i></a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        3
+                        <sup>rd</sup>
+                        "Competition for excellent students in Informatics"
+                        <a data-toggle="modal" data-target="#hocsinhgioi" class="text-primary"><i
+                                class="fas fa-image"></i></a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        2
+                        <sup>rd</sup>
+                        Creative competition for teenagers
+                        <a data-toggle="modal" data-target="#stttn" class="text-primary"><i
+                                class="fas fa-image"></i></a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        3
+                        <sup>rd</sup>
+                        "DUT Programing" competition
+                        <a data-toggle="modal" data-target="#dutprograming" class="text-primary"><i
+                                class="fas fa-image"></i></a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        1
+                        <sup>st</sup>
+                        "Student scientific research" (IT faculty)
+                        <a data-toggle="modal" data-target="#NCKH1" class="text-primary"><i
+                                class="fas fa-image"></i></a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        3
+                        <sup>st</sup>
+                        "Student scientific research" (Da Nang University of Technology)
+                        <a data-toggle="modal" data-target="#NCKH3" class="text-primary"><i
+                                class="fas fa-image"></i></a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Creative project - Community project (AEC soft skill course)
+                        <a data-toggle="modal" data-target="#softskill" class="text-primary"><i
+                                class="fas fa-image"></i></a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Scholarship from the University of Greenwich(Viet Nam) worth 140,000,000 vnđ
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Certificatice of Codelean:<br>
+                    <li>
+                        <a target="_blank" href="https://codelearn.io/certification/nzi2zjm3">Basic algorithms</a>,
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://codelearn.io/certification/mdfjzgjm">C++ Standard Template
+                            Library</a>,
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://codelearn.io/certification/ote0zjfl">Computer hardware</a>,
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://codelearn.io/certification/n2mwndy1">Computer software</a>,
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://codelearn.io/certification/yje1ngu2">Computer Communication &
+                            Network</a>,
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://codelearn.io/certification/m2e1nzc5">Advanced Java</a>,
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://codelearn.io/certification/nmnlnwnk">Advanced algorithms</a>,
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://codelearn.io/certification/ntnhmde3">Java fundamentals</a>,
+                    </li>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Certificatice of Coursera:<br>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.coursera.org/account/accomplishments/certificate/9T5AJXWLFHN2">Creating
+                            Multi Task Models With Keras</a>,
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.coursera.org/account/accomplishments/certificate/CDCWP8SDBFQT">Neural
+                            Networks and Deep Learning</a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://coursera.org/share/1d527154b2663e62944598c98feeeded">Deep Learning with PyTorch : Generative Adversarial Network</a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://coursera.org/share/48d1ca721544da9e71b582343736488c">
+                            Visualizing Filters of a CNN using TensorFlow</a>
+                    </li>
+
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Certificatice of Udemy:<br>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.udemy.com/certificate/UC-41fdecf3-0f4a-4aed-b4f9-9380eeb31376/">KivyMD |
+                            Develop Apps using KivyMD in Python</a>,
+                    </li>
                     </li>
                 </ul>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Nguyen Huy
-                        <span class="text-primary">Tuong</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Da Nang, Viet Nam - 0965.223.769
-                        <a href="mailto:name@email.com">huytuong010101@gmail.com</a>
-                    </div>
-                    <p class="lead mb-5">
-                        Hello! I’m Nguyen Huy Tuong. Programming is my passion. I started learning programming when I was in high school. At that time, I studied algorithms to participate in some computer competitions. I have won a scholarship from the University of Greenwich(Viet Nam) worth 140,000,000 vnđ. But I chose to study at Da Nang University of Technology, where I was offered direct admission. I choose Python and Js as the programming language I will learn. I am studying AI at Sgroup and learning Django by myself.
-                    </p>
-                    <h3>Some information</h3>
-                    <p>Date of birth: 01/01/2001</p>
-                    <p>Hometown: Quang Nam<p>
-                    <p>Phone (Zalo): 0965223769<p>
-                    <p>Email: huytuong010101@gmail.com<p>
-                    <div class="social-icons">
-                        <a class="social-icon" target="_blank" href="https://github.com/huytuong010101"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" target="_blank" href="https://www.youtube.com/channel/UCmrzRwST-ro3k3diyq6j2hA"><i class="fab fa-youtube"></i></a>
-                        <a class="social-icon" target="_blank" href="https://www.facebook.com/huytuong010101"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Phan Chau Trinh High School</h3>
-                            <div class="subheading mb-3">Student</div>
-                            <p>GPA: 8.9/10 - 8.8/10 - 8.9/10</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2016 - June 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Da Nang University of Technology</h3>
-                            <div class="subheading mb-3">IT Student</div>
-                            <p>GPA: 3.81/4</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2019 - now</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">S-Group</h3>
-                            <div class="subheading mb-3">AI Team Lead</div>
-                            <p>Learning Front-end(HTML, CSS, JS, FW) + Back-end(NodeJs) + AI</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">November 2019 - now</span></div>
-                    </div>
-                </div>
-            </section>
-            <!-- Project -->
-            <section class="resume-section" id="project">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Project</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Image Captioning</h3>
-                            <div class="subheading mb-3">Reseraching - Developer</div>
-                            <div>Team 4</div>
-                            <p>Project to participate in scientific research student conference<a target="_blank" href="/cv/assets/docs/SV_NCKH_IMAGE_CAPTIONING.pdf">See more</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Clothes virtual Try on</h3>
-                            <div class="subheading mb-3">Reseraching - Developer</div>
-                            <div>Team 3</div>
-                            <p>Project to participate in scientific research student conference<a target="_blank" href="/cv/assets/docs/Bai bao nam hoc 2021-2022.pdf">See more</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Da Nang plant identify</h3>
-                            <div class="subheading mb-3">AI Developer</div>
-                            <div>Team 1</div>
-                            <p>Building module to search plant spiecies by image<a target="_blank" href="http://danang.plantid.com.vn/">See more</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Parking Findor System - PBL5 (AI - DS - IOT)</h3>
-                            <div class="subheading mb-3">AI - BackEnd Developer</div>
-                            <div>Team 4</div>
-                            <p>An website helps drivers to find best place to park their car<a target="_blank" href="https://youtu.be/aqc-QID5GfQ">See more</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Loa Loa chatbot</h3>
-                            <div class="subheading mb-3">Python Back-end developer</div>
-                            <div>Team 4</div>
-                            <p>Update DUT notifications fastest via Messenger <a target="_blank" href="https://loaloa.cf/">See more</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Game "Lắc liền tay - rinh quà khủng" for CityA Homes Company</h3>
-                            <div class="subheading mb-3">Nodejs Back-end developer</div>
-                            <div>Team 2 (Back-end)</div>
-                            <p>A game online: Login facebook - receive random gifts <a target="_blank" href="https://www.facebook.com/cityahomes.vn/posts/129847318654550">See more</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">"Life in belgium" landing page for mobile app company</h3>
-                            <div class="subheading mb-3">Front-end developer</div>
-                            <div>Team 2</div>
-                            <p>A landing page use to advertise mobile app <a target="_blank" href="./cv/assets/img/landingPage.png">See more</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Multiple choice test website</h3>
-                            <div class="subheading mb-3">Back-end + Front-end</div>
-                            <div>Myself</div>
-                            <p>You can do Multiple choice exercise via Website or Messenger. I developed this website to award to my high school <a target="_blank" href="http://botthithptqg.herokuapp.com/">See more</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2018</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Some pet project</h3>
-                            <p>Manage Coffee via Smartphone (SocketIO - NodeJs)<a target="_blank" href="https://www.youtube.com/watch?v=L_qaIUrWqUs">See more</a></p>
-                            <p>Shopping Website (Django)<a target="_blank" href="https://www.youtube.com/watch?v=2qq1TM_ZNdk">See more</a></p>
-                            <p>Stampe pdf file (Python - PyQt5)<a target="_blank" href="https://www.youtube.com/watch?v=EB9mwYwxhjs">See more</a></p>
-                            <p>LookForBus (NodeJs - MySQL - Bootstrap - Jquery)<a target="_blank" href="https://www.youtube.com/watch?v=vdaUDLHfWnQ">See more</a></p>
-                            <p>Statistics Covid-19 Mobile App (Hybrid)<a target="_blank" href="./cv/assets/img/coronaApp.jpg">See more</a></p>
-                            <p>Face mask check Via Webcam (Python - Deeplearning)<a target="_blank" href="https://github.com/huytuong010101/CheckFaceMask-VGG-16-DeepLearning">See more</a></p>
-                            <p>My blog on Codelean<a target="_blank" href="https://codelearn.io/sharing?str=huytuong010101&startdate=&enddate=">See more</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
-                    </div>
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience -->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Intern AI - Computer Vision</h3>
-                            <div class="subheading mb-3">Ftech AI Company</div>
-                            <div>Research some projects related to Computer Vision</div>
-                            <p><a target="_blank" href="https://ftech.ai/">About company</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2020 to Now</span></div>
-                    </div>
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-cuttlefish"></i>++</li>
-                        <li class="list-inline-item"><i class="fab fa-github-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-docker"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-aws"></i></li>
-                    </ul>
-
-                    <div class="subheading mb-3">Framework - Library</div>
-                    <ul class="">
-                       <li>NodeJS</li>
-                       <li>Django</li>
-                       <li>FastAPI</li>
-                       <li>Bootstrap, Jquery</li>
-                       <li>Pytorch</li>
-                    </ul>
-
-                    <div class="subheading mb-3">Softskill</div>
-                    <ul class="">
-                       <li>English</li>
-                       <li>Teamwork</li>
-                       <li>Code without eating</li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>I usually play Organ - practice Vovinam - listen to Music</p>
-                    <p class="mb-0">And special is Coding</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                1 <sup>st</sup> and 3 <sup>rd</sup>
-                                "Young Informatics" competition
-                                <a data-toggle="modal" data-target="#tinHocTre" class="text-primary"><i class="fas fa-image"></i></a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1 <sup>st</sup> and 2 <sup>nd</sup> "Oympic tin hoc" competition
-                            <a data-toggle="modal" data-target="#olympicTinHoc" class="text-primary"><i class="fas fa-image"></i></a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2 <sup>nd</sup> and 3 <sup>rd</sup> "Creative Science and Technology" competition
-                            <a data-toggle="modal" data-target="#KHKT" class="text-primary"><i class="fas fa-image"></i></a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            "Competition for excellent students in Informatics"
-                            <a data-toggle="modal" data-target="#hocsinhgioi" class="text-primary"><i class="fas fa-image"></i></a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>rd</sup>
-                            Creative competition for teenagers
-                            <a data-toggle="modal" data-target="#stttn" class="text-primary"><i class="fas fa-image"></i></a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            "DUT Programing" competition
-                            <a data-toggle="modal" data-target="#dutprograming" class="text-primary"><i class="fas fa-image"></i></a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            "Student scientific research" (IT faculty)
-                            <a data-toggle="modal" data-target="#NCKH1" class="text-primary"><i class="fas fa-image"></i></a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>st</sup>
-                            "Student scientific research" (Da Nang University of Technology)
-                            <a data-toggle="modal" data-target="#NCKH3" class="text-primary"><i class="fas fa-image"></i></a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Creative project - Community project (AEC soft skill course)
-                            <a data-toggle="modal" data-target="#softskill" class="text-primary"><i class="fas fa-image"></i></a>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Scholarship from the University of Greenwich(Viet Nam) worth 140,000,000 vnđ
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Certificatice of Codelean:<br>
-                            <li>
-                            <a target="_blank" href="https://codelearn.io/certification/nzi2zjm3">Basic algorithms</a>, 
-                            </li>
-                            <li>
-                            <a target="_blank" href="https://codelearn.io/certification/mdfjzgjm">C++ Standard Template Library</a>,
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://codelearn.io/certification/ote0zjfl">Computer hardware</a>,
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://codelearn.io/certification/n2mwndy1">Computer software</a>,
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://codelearn.io/certification/yje1ngu2">Computer Communication & Network</a>,
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://codelearn.io/certification/m2e1nzc5">Advanced Java</a>,
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://codelearn.io/certification/nmnlnwnk">Advanced algorithms</a>,
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://codelearn.io/certification/ntnhmde3">Java fundamentals</a>,
-                        </li>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Certificatice of Coursera:<br>
-                            <li>
-                                <a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/9T5AJXWLFHN2">Creating Multi Task Models With Keras</a>, 
-                            </li>
-                            <li>
-                            <a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/CDCWP8SDBFQT">Neural Networks and Deep Learning</a>
-                            </li>
-
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Certificatice of Udemy:<br>
-                            <li>
-                                <a target="_blank" href="https://www.udemy.com/certificate/UC-41fdecf3-0f4a-4aed-b4f9-9380eeb31376/">KivyMD | Develop Apps using KivyMD in Python</a>, 
-                            </li>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <!--modal-->
-        <!-- Modal -->
-        <div class="modal fade" id="tinHocTre" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+        </section>
+    </div>
+    <!--modal-->
+    <!-- Modal -->
+    <div class="modal fade" id="tinHocTre" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <img src="./cv/assets/img/G1TinHocTre.JPG">
                 <hr>
                 <img src="./cv/assets/img/G3tinhoctre.JPG">
-                </div>
             </div>
         </div>
-        <div class="modal fade" id="olympicTinHoc" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+    </div>
+    <div class="modal fade" id="olympicTinHoc" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <img src="./cv/assets/img/G1olympictin.JPG">
                 <hr>
                 <img src="./cv/assets/img/G2olympictin.JPG">
-                </div>
             </div>
         </div>
-        <div class="modal fade" id="KHKT" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+    </div>
+    <div class="modal fade" id="KHKT" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <img src="./cv/assets/img/2KHKT.jpg">
                 <hr>
                 <img src="./cv/assets/img/3KHKT.jpg">
-                </div>
             </div>
         </div>
-        <div class="modal fade" id="hocsinhgioi" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+    </div>
+    <div class="modal fade" id="hocsinhgioi" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <img src="./cv/assets/img/G3hocsinhgioi.JPG">
-                </div>
             </div>
         </div>
-        <div class="modal fade" id="stttn" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+    </div>
+    <div class="modal fade" id="stttn" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <img src="./cv/assets/img/2STTTN.jpg">
-                </div>
             </div>
         </div>
-        <div class="modal fade" id="dutprograming" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+    </div>
+    <div class="modal fade" id="dutprograming" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <img src="./cv/assets/img/G3DutPrograming.jpg" class="w-100">
-                </div>
             </div>
         </div>
-        <div class="modal fade" id="softskill" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+    </div>
+    <div class="modal fade" id="softskill" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <img src="./cv/assets/img/softskill.jpg" class="w-100">
-                </div>
             </div>
         </div>
-        <div class="modal fade" id="NCKH1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+    </div>
+    <div class="modal fade" id="NCKH1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <img src="./cv/assets/img/1research.jpg" class="w-100">
-                </div>
             </div>
         </div>
-        <div class="modal fade" id="NCKH3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+    </div>
+    <div class="modal fade" id="NCKH3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <img src="./cv/assets/img/3research.jpg" class="w-100">
-                </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="cv/js/scripts.js"></script>
-        <!-- Count view-->
-        <script>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="cv/js/scripts.js"></script>
+    <!-- Count view-->
+    <script>
         function countView(res) {
             $("#numOfViewer").text(res.value + " ")
         }
-        </script>
-        <script async src="https://api.countapi.xyz/hit/huytuong010101-github-io/visits?callback=countView"></script>
-    </body>
+    </script>
+    <script async src="https://api.countapi.xyz/hit/huytuong010101-github-io/visits?callback=countView"></script>
+</body>
+
 </html>
